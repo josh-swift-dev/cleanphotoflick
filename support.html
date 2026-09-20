@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CleanPhotoFlick Support">
-    <title>CleanPhotoFlick - Support</title>
+    <meta name="description" content="CleanPhotoFlick Help, How to Use, and Support">
+    <title>CleanPhotoFlick - Help & Support</title>
 
     <style>
         * { box-sizing: border-box; }
 
         body {
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                         Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
             background: linear-gradient(180deg, #04101c 0%, #020810 100%);
             color: #f5f7fa;
             line-height: 1.65;
@@ -26,30 +26,31 @@
 
         .header {
             text-align: center;
-            margin-bottom: 45px;
+            margin-bottom: 42px;
         }
 
         .icon {
-            width: 74px;
-            height: 74px;
+            width: 78px;
+            height: 78px;
             margin: 0 auto 18px;
-            border-radius: 20px;
+            border-radius: 22px;
             display: flex;
             align-items: center;
             justify-content: center;
             background: #0d85ff;
-            font-size: 34px;
-            box-shadow: 0 10px 35px rgba(13,133,255,.25);
+            font-size: 36px;
+            box-shadow: 0 10px 35px rgba(13,133,255,.28);
         }
 
         h1 {
             margin: 0;
-            font-size: 34px;
+            font-size: 35px;
         }
 
         .subtitle {
-            margin-top: 8px;
             color: #91a3b8;
+            margin-top: 8px;
+            font-size: 17px;
         }
 
         .card {
@@ -63,7 +64,7 @@
         h2 {
             color: #5eafff;
             margin-top: 0;
-            font-size: 21px;
+            font-size: 22px;
         }
 
         h3 {
@@ -76,28 +77,78 @@
         }
 
         strong {
-            color: white;
+            color: #ffffff;
         }
 
         a {
             color: #55aaff;
         }
 
+        .step {
+            display: flex;
+            gap: 16px;
+            margin: 20px 0;
+            align-items: flex-start;
+        }
+
+        .number {
+            min-width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #0d85ff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .step-content p {
+            margin: 0;
+        }
+
         .gesture {
             display: flex;
-            gap: 12px;
-            margin: 12px 0;
             align-items: center;
+            gap: 14px;
+            margin: 14px 0;
         }
 
         .badge {
-            min-width: 105px;
+            min-width: 125px;
             text-align: center;
-            padding: 8px 12px;
+            padding: 9px 13px;
             border-radius: 100px;
             background: #142b40;
             color: #65b4ff;
             font-weight: 700;
+        }
+
+        .important {
+            background: #10283b;
+            border-color: #286391;
+        }
+
+        .important h2 {
+            color: #73bdff;
+        }
+
+        .tip {
+            background: #0c2231;
+            border-left: 4px solid #0d85ff;
+            padding: 15px 18px;
+            border-radius: 10px;
+            color: #c7d0da;
+            margin-top: 18px;
         }
 
         .nav {
@@ -120,222 +171,481 @@
 </head>
 
 <body>
+
 <div class="container">
 
     <div class="header">
         <div class="icon">📸</div>
-        <h1>CleanPhotoFlick Support</h1>
+        <h1>CleanPhotoFlick Help</h1>
         <div class="subtitle">
-            Quick photo cleanup, one flick at a time.
+            How to use CleanPhotoFlick and get support.
         </div>
     </div>
 
-    <div class="card">
-        <h2>Getting Started</h2>
+    <!-- GETTING STARTED -->
 
-        <ol>
-            <li>Open CleanPhotoFlick.</li>
-            <li>Complete the introductory screens.</li>
-            <li>Allow access to your Photos library.</li>
-            <li>CleanPhotoFlick will prepare your photo deck.</li>
-            <li>Review each photo and choose whether to keep it or mark it for deletion.</li>
-        </ol>
+    <div class="card">
+        <h2>How to Use CleanPhotoFlick</h2>
+
+        <p>
+            CleanPhotoFlick gives you a quick way to work through your
+            photo library whenever you have a few spare minutes.
+        </p>
+
+        <div class="step">
+            <div class="number">1</div>
+            <div class="step-content">
+                <strong>Open CleanPhotoFlick</strong>
+                <p>
+                    On your first launch, you'll see a short introduction
+                    explaining how CleanPhotoFlick works.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="number">2</div>
+            <div class="step-content">
+                <strong>Allow Photo Access</strong>
+                <p>
+                    CleanPhotoFlick needs access to your Photos library to
+                    display photos for review.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="number">3</div>
+            <div class="step-content">
+                <strong>Start Flicking</strong>
+                <p>
+                    CleanPhotoFlick presents photos one at a time. Decide
+                    whether you want to keep each photo or mark it for
+                    deletion.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="number">4</div>
+            <div class="step-content">
+                <strong>Review Your Delete Queue</strong>
+                <p>
+                    Photos marked for deletion remain in a review queue
+                    until you decide what to do with them.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="number">5</div>
+            <div class="step-content">
+                <strong>Verify and Delete</strong>
+                <p>
+                    Review your selections carefully. When you're ready,
+                    request deletion and approve Apple's system confirmation.
+                </p>
+            </div>
+        </div>
     </div>
 
+    <!-- SWIPES -->
+
     <div class="card">
-        <h2>Using CleanPhotoFlick</h2>
+        <h2>Flick Controls</h2>
 
         <div class="gesture">
-            <div class="badge">Swipe Right</div>
-            <div>Keep the photo.</div>
+            <div class="badge">← Swipe Left</div>
+            <div>
+                Mark the current photo for deletion.
+            </div>
         </div>
 
         <div class="gesture">
-            <div class="badge">Swipe Left</div>
-            <div>Add the photo to your deletion queue.</div>
+            <div class="badge">Swipe Right →</div>
+            <div>
+                Keep the current photo.
+            </div>
         </div>
 
         <div class="gesture">
             <div class="badge">Undo</div>
-            <div>Reverse your most recent swipe.</div>
+            <div>
+                Reverse your most recent swipe.
+            </div>
         </div>
 
         <div class="gesture">
             <div class="badge">Tap Photo</div>
-            <div>Open a larger preview of the photo.</div>
+            <div>
+                Open the photo in a larger preview.
+            </div>
         </div>
 
         <p>
-            You can also use the Delete and Keep buttons underneath the photo
-            instead of swiping.
+            Don't like swiping? You can use the
+            <strong>Delete</strong> and <strong>Keep</strong> buttons
+            underneath the photo instead.
         </p>
     </div>
 
-    <div class="card">
-        <h2>Deleting Photos</h2>
+    <!-- DELETE QUEUE -->
+
+    <div class="card important">
+        <h2>Nothing Is Deleted When You Swipe</h2>
 
         <p>
             <strong>Swiping left does not immediately delete a photo.</strong>
         </p>
 
         <p>
-            Photos you mark for deletion are placed into your deletion queue.
-            The number of photos waiting for review appears near the top of the
-            Flick screen.
-        </p>
-
-        <p>When you're ready:</p>
-
-        <ol>
-            <li>Open the deletion queue.</li>
-            <li>Review the photos you selected.</li>
-            <li>Tap the X on any photo you want to keep.</li>
-            <li>Tap the Delete Photos button when you're satisfied.</li>
-            <li>Confirm the deletion request.</li>
-            <li>Approve Apple's system confirmation if it appears.</li>
-        </ol>
-    </div>
-
-    <div class="card">
-        <h2>I Deleted a Photo by Mistake</h2>
-
-        <p>
-            Deleted photos may be moved to the Recently Deleted album in the
-            Apple Photos app.
+            A left swipe only adds the photo to CleanPhotoFlick's
+            deletion queue.
         </p>
 
         <p>
-            Open <strong>Photos → Recently Deleted</strong> to see whether the
-            photo can still be recovered.
+            The number near the top of the Flick screen shows how many
+            photos are currently waiting in your deletion queue.
         </p>
 
         <p>
-            Recovery availability and retention periods are controlled by
-            Apple Photos.
+            Tap that indicator whenever you want to review the photos
+            you've selected.
         </p>
     </div>
 
+    <!-- VERIFY -->
+
     <div class="card">
-        <h2>Photo Access</h2>
+        <h2>How to Review & Delete Photos</h2>
+
+        <div class="step">
+            <div class="number">1</div>
+            <div class="step-content">
+                <strong>Open Verify Deletes</strong>
+                <p>
+                    Tap the delete-queue indicator at the top of the
+                    Flick screen.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="number">2</div>
+            <div class="step-content">
+                <strong>Review Every Photo</strong>
+                <p>
+                    Look through the photos you've marked for deletion.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="number">3</div>
+            <div class="step-content">
+                <strong>Changed Your Mind?</strong>
+                <p>
+                    Tap the X on a photo to remove it from the delete
+                    queue and keep it.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="number">4</div>
+            <div class="step-content">
+                <strong>Delete the Remaining Photos</strong>
+                <p>
+                    Tap the Delete Photos button when you're satisfied
+                    with your selections.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="number">5</div>
+            <div class="step-content">
+                <strong>Confirm</strong>
+                <p>
+                    CleanPhotoFlick asks you to confirm your request.
+                    Apple Photos may then display its own system
+                    confirmation before anything is removed.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PREVIEW -->
+
+    <div class="card">
+        <h2>Viewing a Photo Before Deciding</h2>
 
         <p>
-            CleanPhotoFlick requires access to your Photos library to display
-            photos and request deletion of photos you select.
+            Need a better look before deciding?
+        </p>
+
+        <p>
+            Tap the displayed photo to open the larger photo preview.
+            You can zoom in to inspect details before deciding whether
+            to keep the photo or mark it for deletion.
+        </p>
+    </div>
+
+    <!-- UNDO -->
+
+    <div class="card">
+        <h2>Undoing Your Last Flick</h2>
+
+        <p>
+            If you accidentally swipe the wrong direction, tap the
+            <strong>Undo</strong> button between Delete and Keep.
+        </p>
+
+        <p>
+            CleanPhotoFlick will return you to the previous photo so you
+            can make another choice.
+        </p>
+    </div>
+
+    <!-- PHOTO ACCESS -->
+
+    <div class="card">
+        <h2>Full vs. Limited Photo Access</h2>
+
+        <h3>Full Access</h3>
+
+        <p>
+            Allows CleanPhotoFlick to work with the photos available in
+            your Photos library.
         </p>
 
         <h3>Limited Access</h3>
 
         <p>
-            If you choose Limited Access, CleanPhotoFlick will only display
-            photos you've allowed it to access.
+            CleanPhotoFlick will only be able to display photos you've
+            specifically allowed it to access.
         </p>
 
         <p>
-            You can allow additional photos from CleanPhotoFlick's Settings
-            screen or change photo permissions in iPhone Settings.
+            You can allow access to additional photos from CleanPhotoFlick
+            Settings or change the app's photo permissions through iPhone
+            Settings.
         </p>
     </div>
+
+    <!-- ICLOUD -->
 
     <div class="card">
-        <h2>A Photo Is Taking a While to Load</h2>
+        <h2>Photos Stored in iCloud</h2>
 
         <p>
-            If you use iCloud Photos with optimized iPhone storage, the
-            original photo may need to be downloaded by iOS before it can be
-            displayed.
+            If you use iCloud Photos and Optimize iPhone Storage, some
+            full-resolution photos may not currently be stored on your
+            iPhone.
         </p>
 
         <p>
-            Make sure your device has an internet connection and try loading
-            the photo again.
+            iOS may need to retrieve a photo from iCloud before
+            CleanPhotoFlick can display it.
+        </p>
+
+        <div class="tip">
+            If a photo isn't loading, make sure you have an internet
+            connection and try loading the photo again.
+        </div>
+    </div>
+
+    <!-- SHUFFLE -->
+
+    <div class="card">
+        <h2>Photo Deck & Shuffle</h2>
+
+        <p>
+            CleanPhotoFlick creates a randomized deck from the photos
+            currently available to the app.
+        </p>
+
+        <p>
+            Work through the deck at your own pace. When a pass is
+            complete, you can start another shuffled pass.
+        </p>
+
+        <p>
+            Your current delete queue is kept when you start another
+            pass unless you choose to clear it.
         </p>
     </div>
+
+    <!-- TROPHIES -->
 
     <div class="card">
         <h2>Trophies</h2>
 
         <p>
-            CleanPhotoFlick includes optional trophies for reaching cleanup
-            milestones such as reviewing photos, deleting verified photos, and
-            spending time cleaning your library.
+            CleanPhotoFlick includes optional trophies for reaching
+            cleanup milestones.
+        </p>
+
+        <p>You can earn trophies for things such as:</p>
+
+        <ul>
+            <li>Reviewing photos</li>
+            <li>Deleting verified photos</li>
+            <li>Spending time cleaning your library</li>
+            <li>Reaching estimated storage milestones</li>
+        </ul>
+
+        <p>
+            Don't want trophies or achievement popups?
         </p>
 
         <p>
-            Trophy notifications and the Trophies tab can be disabled from:
+            Open <strong>Settings → Enable Trophies</strong> and turn
+            the option off.
         </p>
 
         <p>
-            <strong>CleanPhotoFlick → Settings → Enable Trophies</strong>
-        </p>
-
-        <p>
-            Turning trophies off does not erase your existing progress.
+            Your existing progress is kept if trophies are disabled.
         </p>
     </div>
+
+    <!-- STATS -->
 
     <div class="card">
-        <h2>Storage Saved</h2>
+        <h2>Lifetime Statistics</h2>
 
         <p>
-            Storage-saved values shown by CleanPhotoFlick are estimates.
+            CleanPhotoFlick keeps local statistics to show your cleanup
+            progress, including:
         </p>
 
+        <ul>
+            <li>Photos reviewed</li>
+            <li>Photos deleted</li>
+            <li>Time spent using CleanPhotoFlick</li>
+            <li>Estimated storage saved</li>
+        </ul>
+
         <p>
-            Actual storage recovered can vary because of iCloud Photos,
-            optimized storage, HEIC compression, Live Photos, edits, and other
-            Apple Photos storage behavior.
+            These statistics are stored locally for app functionality.
         </p>
     </div>
+
+    <!-- STORAGE -->
 
     <div class="card">
-        <h2>Privacy</h2>
+        <h2>Estimated Storage Saved</h2>
 
         <p>
-            CleanPhotoFlick does not require an account and does not upload
-            your photo library to our servers.
+            Storage-saved values displayed by CleanPhotoFlick are
+            <strong>estimates</strong>.
         </p>
 
         <p>
-            Photo selection and cleanup are performed using Apple's Photos
-            framework on your device.
+            Actual storage usage varies depending on HEIC/JPEG
+            compression, Live Photos, iCloud optimization, photo edits
+            and other Apple Photos storage behavior.
         </p>
 
         <p>
-            For additional information, read our
-            <a href="privacy.html">Privacy Policy</a>.
+            Photos placed in Apple's Recently Deleted album may also
+            continue using storage until permanently removed.
         </p>
     </div>
+
+    <!-- RECOVER -->
+
+    <div class="card">
+        <h2>I Accidentally Deleted a Photo</h2>
+
+        <p>
+            Apple Photos normally places deleted photos into its
+            <strong>Recently Deleted</strong> album for a period of time.
+        </p>
+
+        <p>
+            Open the Apple Photos app and locate the Recently Deleted
+            album to see whether your photo can still be recovered.
+        </p>
+
+        <p>
+            Recovery availability and retention are controlled by Apple,
+            not CleanPhotoFlick.
+        </p>
+    </div>
+
+    <!-- TROUBLESHOOTING -->
 
     <div class="card">
         <h2>Troubleshooting</h2>
 
-        <h3>No photos are appearing</h3>
+        <h3>No Photos Appear</h3>
+
         <p>
-            Verify that CleanPhotoFlick has permission to access your Photos
-            library. If you selected Limited Access, make sure at least one
-            photo has been made available to the app.
+            Check that CleanPhotoFlick has permission to access your
+            Photos library. If you're using Limited Access, make sure
+            you've selected photos for the app to access.
         </p>
 
-        <h3>The app cannot delete a photo</h3>
+        <h3>A Photo Won't Load</h3>
+
         <p>
-            Verify that CleanPhotoFlick has read/write Photos permission and
-            that the photo is still available in your library.
+            The photo may be stored in iCloud. Check your internet
+            connection and try again.
         </p>
 
-        <h3>My photo library changed</h3>
+        <h3>I Can't Delete a Photo</h3>
+
         <p>
-            CleanPhotoFlick responds to changes made to the Apple Photos
-            library. Photos deleted or modified elsewhere may no longer be
-            available in your current cleanup session.
+            Verify that CleanPhotoFlick has read/write access to Photos
+            and that the photo is still available in your library.
+        </p>
+
+        <h3>My Library Changed While Using the App</h3>
+
+        <p>
+            CleanPhotoFlick monitors the Photos library for changes.
+            Photos deleted or changed elsewhere may no longer be
+            available in your current session.
         </p>
     </div>
 
+    <!-- PRIVACY -->
+
     <div class="card">
-        <h2>Contact Support</h2>
+        <h2>Your Privacy</h2>
 
         <p>
-            Still need help? Send an email with a description of the problem,
-            your iPhone model, and your iOS version.
+            CleanPhotoFlick does not require an account and does not
+            upload your photo library to our servers.
+        </p>
+
+        <p>
+            Photo selection and cleanup are performed using Apple's
+            Photos framework on your device.
+        </p>
+
+        <p>
+            Read the complete
+            <a href="privacy.html">CleanPhotoFlick Privacy Policy</a>
+            for more information.
+        </p>
+    </div>
+
+    <!-- CONTACT -->
+
+    <div class="card">
+        <h2>Still Need Help?</h2>
+
+        <p>
+            If you're experiencing a problem that isn't covered above,
+            contact CleanPhotoFlick Support.
+        </p>
+
+        <p>
+            When reporting a problem, including your iPhone model,
+            iOS version, and a short description of what happened can
+            help troubleshoot the issue.
         </p>
 
         <p>
@@ -346,15 +656,15 @@
         </p>
 
         <p>
-            Please do not email personal photos or other sensitive information
-            when requesting support.
+            Please don't send personal photos or other sensitive
+            information with your support request.
         </p>
     </div>
 
     <div class="nav">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html">Help & Support</a>
     </div>
 
     <div class="footer">
@@ -362,5 +672,6 @@
     </div>
 
 </div>
+
 </body>
 </html>
